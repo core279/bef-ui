@@ -1,0 +1,56 @@
+
+<!-- LayoutWrap -->
+<div class="cp-layout-wrap" [ngClass] ="{'en' : message && message.currentLanguage == 'en'}">
+
+  <!-- Header -->
+  <header layout-gnb ></header>
+  <!-- //Header -->
+
+  <!-- LNB -->
+  <nav layout-lnb class="cp-layout-lnb"></nav>
+  <!-- //LNB -->
+
+  <!-- ContentsWarp -->
+  <div id="_layout" class="cp-layout-conWrap">
+    <div id="_contentsWrap" class="cp-wrap-contents cp-collapse">
+
+      <!-- LnbOption -->
+      <div id="_sideMenu" class="cp-layout-option">
+        <!-- 사이드 컴포넌트 -->
+        <div side-app id="_apps" class="cp-ui-scroll"></div>
+        <div side-project id="_project" class="cp-ui-scroll"></div>
+        <div side-favorite id="_favorite" class="cp-ui-scroll"></div>
+        <!-- //사이드 컴포넌트 -->
+      </div>
+      <!-- //LnbOption -->
+
+      <!-- Content-->
+      <div id="_contents" class="cp-layout-detail">
+        <!-- Loading-Part -->
+        <div id="_loadingLayout" class="cp-loadingPart" style="display:block;">
+          <div class="cp-ui-loading"></div>
+        </div>
+        <!-- //Loading-Part -->
+
+        <!-- top button -->
+        <!--<a class="cp-btn-top" href="javascript:"></a>-->
+        <!-- //top button -->
+
+        <!-- 공통팝업 -->
+        <div class="cp-wrap-screen">
+        </div>
+        <!-- Route 페이지 -->
+        <router-outlet id="_router" (activate)="onActivate($event)"></router-outlet>
+        <!-- //Route 페이지 -->
+      </div>
+      <!-- //Content-->
+
+      <!-- Footer -->
+      <div layout-footer class="cp-layout-footer"></div>
+      <!-- //Footer -->
+    </div>
+  </div>
+  <!-- //ContentsWarp -->
+
+</div>
+<!-- //LayoutWrap -->

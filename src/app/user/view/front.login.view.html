@@ -1,0 +1,67 @@
+<div class="cp-wrap-login">
+  <div class="cp-wrap-form">
+
+    <dl class="cp-form-index">
+      <dt>
+
+        <em></em>
+      </dt>
+      <dd>
+        <ul class="cp-list-loginform">
+          <li>
+            <i class="material-icons">&#xE7FD;</i>
+            <input  type="text" class="cp-input-form" placeholder="{{message.get('login.placeholder.id')}}" [(ngModel)]="userVO.id">
+          </li>
+          <li>
+            <i class="material-icons">&#xE0DA;</i>
+            <input  (keyup)="$event.keyCode == 13 ? login() : null;" type="password" class="cp-input-form" placeholder="{{message.get('login.placeholder.password')}}" [(ngModel)]="userVO.password">
+          </li>
+        </ul>
+
+        <a class="cp-btn-full" href="javascript:" (click)="login()" >{{message.get('login.button.login')}}</a>
+
+        <!-- 아이디 저장 -->
+        <ul class="cp-list-findId">
+          <li>
+            <!-- Checkbox -->
+            <div class="cp-wrap-checkbox">
+              <input type="checkbox" id="remember" class="cp-checkbox" [(ngModel)]="isRemember">
+              <i></i>
+              <label for="remember">{{message.get('login.label.id.remember')}}</label>
+            </div>
+            <!-- //Checkbox -->
+          </li>
+          <li>
+            <!-- 회원가입 -->
+            <a [routerLink]="['/user/join/account']" >{{message.get('login.button.join')}}</a>
+          </li>
+          <li>
+            <!-- 아이디 비밀번호 찾기-->
+            <a [routerLink]="['/user/join/find']">{{message.get('login.label.find.idpassword')}}</a>
+          </li>
+        </ul>
+        <!-- //아이디 저장 -->
+      </dd>
+    </dl>
+
+    <!-- 이용약관 -->
+    <ul class="cp-list-clause">
+      <li>
+        <a href="javascript:">{{message.get('login.terms')}}</a>
+      </li>
+      <li>
+        <a href="javascript:">{{message.get('login.how.to.use')}}</a>
+      </li>
+      <li>
+        <a href="javascript:">{{message.get('login.privacy.statement')}}</a>
+      </li>
+    </ul>
+    <!-- //이용약관 -->
+  </div>
+
+  <!-- FooterWrap -->
+  <div login-footer class="cp-layout-footer type-login"></div>
+  <!-- //FooterWrap -->
+
+
+</div>

@@ -1,0 +1,12 @@
+<ul class="cp-list-lnb">
+    <li (click)="changeMenu('menu1')"
+        [ngClass]="{ 'cp-selected': selectedMenu == 'menu1', 'selected': selectedMenu == 'menu1' }"
+        title="{{message.get('common.title.app')}}">
+        <a href="javascript:"><i class="material-icons">&#xE42A;</i></a>
+    </li>
+    <li (click)="changeMenu('menu2')"
+        [ngClass]="{ 'cp-selected': selectedMenu == 'menu2', 'selected': selectedMenu == 'menu2' }"
+        title="{{message.get('common.title.project')}}">
+        <a href="javascript:"><i class="material-icons">&#xE2C8;</i></a>
+    </li>
+</ul>

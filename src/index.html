@@ -3,10 +3,37 @@
 <head>
   <meta charset="utf-8">
   <title>sk-bef</title>
-  <base href="/">
+  <base href="/app">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script>
+
+    //////////////////////////////////////////////////
+    //
+    // TypeScript에서 사용할 앰비언트 선언
+    //
+    //////////////////////////////////////////////////
+
+    // Host URL
+    var _url		= window.location.protocol + "//" + window.location.host;
+
+    // Context Path
+    var _ctx 		= '/app/';
+
+    // API 경로
+    var _api		= '/api/';
+    var _apiFull	= _url + "/api";
+
+    // Source 경로
+    var _app		= '/resource/app/';
+
+    // Resource 경로
+    var _res		= '/resource/resource/';
+
+  </script>
 </head>
 <body>
   <app-root>Loading...</app-root>

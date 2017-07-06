@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/************************************************************************************************************
+
+   T-fabric Theme CSS
+
+************************************************************************************************************/
+
+/************************************************************************************************************
+
+    Image Change
+
+************************************************************************************************************/
+
+header a.cp-img-mainLogo {background:url();}
+
+
+/************************************************************************************************************
+
+   Background-color
+
+************************************************************************************************************/
+.cp-btn-line:hover {background-color:#c7c7f5;}
+
+
+.cp-layout-lnb ul.cp-list-lnb li:hover a,
+.cp-layout-lnb ul.cp-list-lnb li.selected a,
+.cp-btn-full,
+.cp-wrap-tab,
+.cp-wrap-slider .nstSlider .rightGrip,
+.cp-wrap-slider .nstSlider .leftGrip,
+.nstSlider .rightGrip, .nstSlider .leftGrip,
+.cp-checkbox-slide input[type=checkbox]:checked + label > span.cp-slide,
+.cp-wrap-queryTab ul li.selected::after {background-color:#5e5ecf;}
+.nstSlider .rightGrip, .nstSlider .leftGrip,
+.cp-wrap-appName,
+.cp-data-userImg a.cp-btn-delete,
+.cp-ui-insTitle .cp-wrap-btn a.selected,
+.cp-ui-insTitle .cp-wrap-btn a:hover  {background:#5e5ecf;}
+
+
+.cp-wrap-tab ul.cp-list-tab li::after,
+.cp-btn-full:hover,
+.cp-wrap-tab ul.cp-list-tab li:last-child::before {background-color:#2d2d68;}
+
+/************************************************************************************************************
+
+   Border-color
+
+************************************************************************************************************/
+.cp-btn-full,
+.cp-btn-line,
+.cp-wrap-btnBt,
+table.cp-table-list thead tr th,
+.cp-checkbox-slide input[type=checkbox]:checked + label > span.cp-slide,
+.cp-checkbox-slide input[type=checkbox]:checked + label em,
+.cp-wrap-popbtn,
+.cp-wrap-popTitle,
+.cp-layout-allPopup .cp-wrap-btn,
+.cp-data-userImg a.cp-btn-delete,
+.cp-data-userImg a.cp-btn-modi {border-color:#5e5ecf;}
+
+.nstSlider .rightGrip, .nstSlider .leftGrip {border-color:#2d2d68;}
+
+
+/************************************************************************************************************
+
+   Color
+
+************************************************************************************************************/
+.cp-btn-line,
+.cp-wrap-radio input.cp-radio:checked+i+label,
+.cp-checkbox-slide input[type=checkbox]:checked + label:after,
+.cp-wrap-priceInfo h2 span,
+.cp-wrap-priceInfo ul li em,
+.cp-align-center.type-admin a.cp-btn-delete,
+table.cp-table-list tbody td i:hover,
+.chosen-container .chosen-results li.highlighted,
+ul.cp-list-cause li > a,
+ul.cp-list-logFilter li.selected a,
+.cp-wrap-dataName strong,
+.cp-wrap-editer .cp-wrap-btn a:hover,
+.cp-wrap-editer .cp-wrap-btn a:hover i,
+.cp-data-userImg a.cp-btn-modi i {color:#5e5ecf;}

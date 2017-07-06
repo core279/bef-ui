@@ -1,0 +1,53 @@
+
+<a (click)="gotoMain()" class="cp-img-mainLogo" href="javascript:" style="cursor:pointer"></a>
+
+<ul class="cp-list-root" id="_indicator">
+</ul>
+
+<div class="cp-wrap-rfix">
+    <a (click)="toggleUserView()" class="cp-wrap-myInfo" href="javascript:">
+        <img [attr.src]="image != '' && image ||'/assets/images/img_header_user.png'" alt="사용자"/>
+        <span>{{message.get('common.layout.gnb.label.welcome')}}</span>
+      <i class="material-icons">&#xE5C5;</i>
+    </a>
+    <ul class="cp-list-header" [ngStyle]="{ 'display' : isUserViewOpen ? 'block' : 'none' }" (mouseleave)="isUserViewOpen = !isUserViewOpen">
+      <li>
+        <a href="javascript:" (click)="gotoMyPage()">
+          <i class="material-icons">&#xE7FD;</i>
+          {{message.get('common.layout.guide.user.info')}}
+        </a>
+      </li>
+      <li>
+        <a href="javascript:">
+          <i class="material-icons">&#xE873;</i>
+          {{message.get('common.layout.guide.subtitle1')}}
+        </a>
+      </li>
+      <!--<li>
+        <a href="javascript:" (click)="gotoCharge()">
+          <i class="material-icons">&#xE227;</i>
+          {{message.get('common.layout.guide.subtitle2')}}
+        </a>
+      </li>-->
+      <li>
+        <a href="javascript:">
+          <i class="material-icons">&#xE873;</i>
+          {{message.get('common.layout.guide.subtitle3')}}
+        </a>
+      </li>
+      <li>
+        <a href="javascript:">
+          <i class="material-icons">&#xE873;</i>
+          {{message.get('common.layout.guide.subtitle4')}}
+        </a>
+      </li>
+
+      <li>
+        <a class="cp-btn-small" href="javascript:" (click)="logout()">
+          {{message.get('common.layout.logout')}}
+          <i class="material-icons">&#xE879;</i>
+        </a>
+      </li>
+    </ul>
+
+</div>
